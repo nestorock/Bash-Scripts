@@ -558,7 +558,7 @@ iNumCommands=`awk '{ printf "%40s\n", $1 | "sort -u" }' FS=";" $gTmpFilePacks | 
 echo "================================================================================"                    >> $gTmpOutput
 echo "Commands ($gPatternFilesearched): [$iNumCommands]"                                                   >> $gTmpOutput
 echo "--------------------------------"                                                                    >> $gTmpOutput
-printf "%*s%7s%-40s\n" "$gLenghtFilename" "BINARY" "" "PACKAGES"                                           >> $gTmpOutput
+printf "%*s%7s%-40s\n" "$gLenghtFilename" "COMMAND" "" "PACKAGES"                                          >> $gTmpOutput
 printf "%.0s-" $(eval "echo {1.."$(($gLenghtFilename))"}")                                                 >> $gTmpOutput
 printf "%.0s " $(eval "echo {1..7}")                                                                       >> $gTmpOutput
 printf "%.0s-" $(eval "echo {1.."$(($gLenghtFilename))"}")                                                 >> $gTmpOutput
@@ -573,7 +573,7 @@ echo ""                                                                         
 echo "================================================================================"                            >> $gTmpOutput
 echo "Packages ($gPatternFilesearched): [$iNumPacks]"                                                              >> $gTmpOutput
 echo "--------------------------------"                                                                            >> $gTmpOutput
-printf "%*s%7s%-40s\n" "$gLenghtFilename" "PACKAGES" "" "BYNARY"                                                   >> $gTmpOutput
+printf "%*s%7s%-40s\n" "$gLenghtFilename" "PACKAGES" "" "COMMAND"                                                  >> $gTmpOutput
 printf "%.0s-" $(eval "echo {1.."$(($gLenghtFilename))"}")                                                         >> $gTmpOutput
 printf "%.0s " $(eval "echo {1..7}")                                                                               >> $gTmpOutput
 printf "%.0s-" $(eval "echo {1.."$(($gLenghtFilename))"}")                                                         >> $gTmpOutput
