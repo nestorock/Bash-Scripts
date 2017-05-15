@@ -1,6 +1,18 @@
 # `getUserCommandInfo`
     Check user commands in /usr/bin, and show information about packages that include these commands.
 
+  ### Synopsis:
+>    getUCI.sh [*-console*] [*filename*]
+
+  ### Description:
+>    Script searchs the named command <*`filename`*> in /user/bin and all other command that begin with <*`filename`*>, and it shows all packages that have included those commands.
+
+>    Script shows three list: `PACKAGES`, `COMMANDS (order by commands)`, `COMMANDS (order by packages)`.
+
+  ### Options:
+>    `-console`: Show output detail to terminal. If this option is not set then output detail will be showed into a dialog using [xmessage](https://linux.die.net/man/1/xmessage) command.
+
+
 
   ![Image of Yaktocat](https://github.com/nestorock/Bash-Scripts/blob/master/images/script-getUCI_001.jpg)
 
